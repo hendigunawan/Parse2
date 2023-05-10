@@ -1,0 +1,120 @@
+.header {
+  position: relative;
+  height: 750px;
+  margin-bottom: 8%;
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+
+    &.scrolled {
+      background-color: #0000006c;
+    }
+
+    .navbar-logo {
+      display: block;
+      width: 50px;
+      height: 50px;
+
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .navbar-menu {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        margin-left: 20px;
+
+        a {
+          color: #fff;
+          text-decoration: none;
+          font-size: 16px;
+          font-weight: bold;
+          text-transform: uppercase;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+.header-image {
+  display: flex;
+  flex-direction: column;
+  position:relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  img {
+    display: block;
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+
+  h1 {
+    position: absolute;
+    top: 5vw;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #c9c9c9;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+  }
+
+  .header-btn {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffde21;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #f2f2f2;
+    }
+  }
+}
+}

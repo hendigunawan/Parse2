@@ -1,0 +1,11 @@
+@import '_variable.scss';
+@import '_mixin.scss';
+@import '_header.scss';
+@import "_body.scss";
+
+body {
+    min-width: 700vm;
+    margin: 0;
+    box-sizing: border-box;
+    // @include flex-center();
+}

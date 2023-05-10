@@ -1,0 +1,188 @@
+.header {
+  position: relative;
+  height: 750px;
+  margin-bottom: 8%;
+}
+.header .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+.header .navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.4235294118);
+}
+.header .navbar .navbar-logo {
+  display: block;
+  width: 50px;
+  height: 50px;
+}
+.header .navbar .navbar-logo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.header .navbar .navbar-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.header .navbar .navbar-menu li {
+  margin-left: 20px;
+}
+.header .navbar .navbar-menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.header .navbar .navbar-menu li a:hover {
+  text-decoration: underline;
+}
+.header .header-image {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.header .header-image img {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.header .header-image h1 {
+  position: absolute;
+  top: 5vw;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #c9c9c9;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+.header .header-image .header-btn {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffde21;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+.header .header-image .header-btn:hover {
+  background-color: #f2f2f2;
+}
+
+section {
+  position: relative;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+section h1 {
+  font-weight: bold;
+  font-size: 30px;
+}
+section h3 {
+  font-style: normal;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+section ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+section ul li .text-overlay {
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 10px;
+  border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+section .pembatas {
+  margin-top: 100px;
+}
+section .header-btn {
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffde21;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+section .header-btn:hover {
+  background-color: #f2f2f2;
+}
+section .hboc {
+  background-color: rgba(51, 51, 51, 0.5803921569);
+  margin-bottom: 10%;
+}
+section .hboc #svg {
+  width: auto;
+  height: 50px;
+}
+section .hboc #svg img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body {
+  min-width: 700vm;
+  margin: 0;
+  box-sizing: border-box;
+}
